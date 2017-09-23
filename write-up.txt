@@ -1,0 +1,56 @@
+Nama	: Andre Ramadhani
+NPM		: 1506689484
+Kelas	: APAP - A
+
+=========================== W R I T E U P ==============================
+
+Pada tutorial kali ini, saya mempelajari tentang bagaimana menggunakan
+model dan service di Spring Boot. Service merupakan interface yang
+digunakan untuk menghubungkan model dengan controller. Dengan service,
+kita dapat mengurangi berbagai coupling dari kelas-kelas yang ada.
+
+========================= JAWABAN PERTANYAAN ===========================
+
+Pertanyaan 1 :
+
+	Tidak ada error yang terjadi, karena memenuhi semua parameter yang
+	disediakan oleh controller.
+
+Pertanyaan 2 :
+
+	Terjadi error, karena terdapat missing parameter yaitu parameter
+	"gpa".
+
+Pertanyaan 3 :
+
+	Data Student muncul di page.
+
+Pertanyaan 4 :
+
+	Data Student tidak muncul karena dengan mematikan program akan
+	menghapus semua data yang ada pada variabel list (volatile)
+
+Pertanyaan 5 :
+
+	Data Student muncul di page.
+
+Pertanyaan 6 :
+
+	Semua data Student muncul di page.
+
+========================= IMPLEMENTASI METHOD ==========================
+
+Method selectStudent :
+
+	Untuk membuat method ini, yang dilakukan adalah menggunakan
+	PathVariable sebagai masukan parameter. Seperti yang dilakukan pada
+	method view yang sebelumnya, pencarian dilakukan dengan menggunakan
+	'for' loop yang kemudian me-return objek model Student dengan NPM
+	yang sesuai.
+
+Method delete :
+
+	Implementasi method ini hampir sama dengan implementasi method view.
+	Yang dilakukan adalah mencari data yang memuat NPM yang dicari,
+	kemudian menghapus data tersebut dari list. Return berupa boolean
+	yang menyatakan apakah data berhasi dihapus atau tidak. 
